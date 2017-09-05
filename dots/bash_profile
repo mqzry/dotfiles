@@ -10,3 +10,6 @@ if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
 fi
 
 export PATH="/usr/local/bin:/usr/local/opt/qt/bin:$PATH"
+
+# OPAM configuration
+. /Users/mhas/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
