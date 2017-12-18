@@ -52,14 +52,17 @@ function removeStaleLinks {
 }
 
 function callBootstraps {
+
     for i in $1/*; do
-        if [ -d $i ]; then 
-            return
+        if [ -f $i ]; then 
+            continue
         fi
+
+        
         bootstrap=$i/bootstrap.sh
         
         if [[ -f $bootstrap ]]; then
-            bash bootstrap
+            bash $bootstrap
         fi        
     done
 }
