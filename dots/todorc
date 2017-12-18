@@ -1,0 +1,8 @@
+export TODAY=$(date '+%d%m%Y')
+export TODO_DIR="$HOME/repos/notes/todos"
+if ! test -d $TODO_DIR/$TODAY; then mkdir $TODO_DIR/$TODAY; fi
+export TODO_FILE="$TODO_DIR/$TODAY/todo.txt"
+export DONE_FILE="$TODO_DIR/$TODAY/done.txt"
+export REPORT_FILE="$TODO_DIR/$TODAY/report.txt"
+export TMP_FILE="/tmp/todo.tmp"
+export TODOTXT_DEFAULT_ACTION=ls
