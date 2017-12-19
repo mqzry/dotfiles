@@ -2,6 +2,19 @@
 
 My personal dotfiles with a small bootstrap script to link it.
 
+## Branching model
+
+For every context(Work vs Personal/ macOS vs Arch) there is a branch.
+These will be the long lasting branches. Whenever I need a special combination, there will be an ad-hoc merged branch.
+For example Work+Arch.
+
+### TODO
+
+* date args in todo/config are different in macOS then arch. Only done macOS version on master
+* PATH element adjusted for macOS with /usr/local/bin in master
+* add list of brew packages to macOS branch
+* add gitconfig
+
 ## Supports
 * git
 * bash
@@ -9,6 +22,7 @@ My personal dotfiles with a small bootstrap script to link it.
 * vim
 * xinit
 * zsh
+
 
 ## TO ADD (potentially)
 
@@ -24,3 +38,4 @@ My personal dotfiles with a small bootstrap script to link it.
 * ocaml
 * oh-my-zsh
 * rust
+
