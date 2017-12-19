@@ -1,0 +1,18 @@
+function moveTodos {
+	while read -r line; do todo.sh add $line; done <$1
+}
+
+export TODAY=$(date '+%d%m%Y')
+export YESTERDAY=$(date -v-1d '+%d%m%Y')
+
+export TODO_DIR="$HOME/repos/notes/todos"
+if ! test -d $TODO_DIR/$TODAY; then 
+	mkdir $TODO_DIR/$TODAY
+	moveTodos $TODO_DIR/$YESTERDAY/todo.txt
+fi
+
+export TODO_FILE="$TODO_DIR/$TODAY/todo.txt"
+export DONE_FILE="$TODO_DIR/$TODAY/done.txt"
+export REPORT_FILE="$TODO_DIR/$TODAY/report.txt"
+export TMP_FILE="/tmp/todo.tmp"
+export TODOTXT_DEFAULT_ACTION=ls
