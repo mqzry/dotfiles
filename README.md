@@ -14,6 +14,7 @@ For example Work+Arch.
 * PATH element adjusted for macOS with /usr/local/bin in master
 * add list of brew packages to macOS branch
 * add gitconfig
+* TODO moving should go further back in history if it can not find a todo for yesterday
 
 ## Supports
 * git
