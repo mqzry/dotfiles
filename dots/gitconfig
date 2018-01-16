@@ -1,0 +1,25 @@
+[user]
+	name = Mohamed Hashi
+	email = mhas@spreadshirt.net
+[core]
+	excludesfile = /Users/mhas/.gitignore_global
+	autocrlf = input
+	editor = sublime -n -w
+[merge]
+	ff = yes
+	commit = no
+	tool = sublime
+[pull]
+	rebase = true
+[commit]
+	template = /Users/mhas/.stCommitMsg
+[mergetool "sublime"]
+	cmd = subl -w $MERGED
+	trustExitCode = false
+[push]
+	default = current
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
