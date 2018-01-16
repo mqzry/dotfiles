@@ -86,4 +86,4 @@ source $ZSH/oh-my-zsh.sh
 
 
 export GOPATH=$HOME/code/go
-export PATH="$GOPATH/bin:/usr/local/bin:$PATH"
+export PATH="$GOPATH/bin:$PATH"
