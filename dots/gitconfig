@@ -7,7 +7,7 @@
 	editor = sublime -n -w
 [merge]
 	ff = yes
-	commit = no
+	commit = yes
 	tool = sublime
 [pull]
 	rebase = true
