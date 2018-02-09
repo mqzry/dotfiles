@@ -84,6 +84,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
+source <(kubectl completion zsh)
 export GOPATH=$HOME/code/go
 export PATH="$GOPATH/bin:/usr/local/bin:/usr/local/sbin:$PATH"
