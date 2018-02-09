@@ -1,6 +1,9 @@
 [user]
 	name = Mohamed Hashi
 	email = mhas@spreadshirt.net
+[pager]
+	branch = false
+	tag = false
 [core]
 	excludesfile = /Users/mhas/.gitignore_global
 	autocrlf = input
