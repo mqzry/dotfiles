@@ -1,6 +1,3 @@
-[user]
-	name = Mohamed Hashi
-	email = mhas@spreadshirt.net
 [pager]
 	branch = false
 	tag = false
@@ -14,8 +11,6 @@
 	tool = sublime
 [pull]
 	rebase = true
-[commit]
-	template = /Users/mhas/.stCommitMsg
 [mergetool "sublime"]
 	cmd = subl -w $MERGED
 	trustExitCode = false
