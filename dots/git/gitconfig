@@ -5,7 +5,7 @@
 	branch = false
 	tag = false
 [core]
-	excludesfile = /Users/mhas/.gitignore_global
+	excludesfile = ~/.git/gitignore_global
 	autocrlf = input
 	editor = sublime -n -w
 [merge]
@@ -15,7 +15,7 @@
 [pull]
 	rebase = true
 [commit]
-	template = /Users/mhas/.stCommitMsg
+	template = ~/.git/commit_template.txt
 [mergetool "sublime"]
 	cmd = subl -w $MERGED
 	trustExitCode = false

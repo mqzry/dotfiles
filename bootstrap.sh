@@ -19,9 +19,8 @@ BASEDIR="${BASEDIR}/dots"
 
 function linkRootDots {
     for i in $1/*; do
-        echo $1
         if [ -d $i ]; then 
-            return
+            continue
         fi
         FILEDIR=`dirname $i`
         FILE=`basename $i`
@@ -35,7 +34,6 @@ function linkRootDots {
 
         ln -s $i $BASEFILE
     done
-    echo "test"
 }
 
 function removeStaleLinks {
