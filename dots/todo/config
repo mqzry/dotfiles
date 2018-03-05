@@ -2,7 +2,7 @@ function moveTodos {
 	while read -r line; do todo.sh add $line >/dev/null 2>&1; done <$1
 }
 
-export TODAY=$(date '+%d%m%Y')
+export TODAY=$(date '+%Y%m%d')
 export YESTERDAY=$(date -v-1d '+%d%m%Y')
 
 export TODO_DIR="$HOME/repos/notes/todos"

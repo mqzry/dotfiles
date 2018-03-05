@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 CURRENTDIR=`dirname $BASH_SOURCE`
 GITDIR="$HOME/.git"
+
 rm -rf $GITDIR
 mkdir $GITDIR
 
