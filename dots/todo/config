@@ -3,7 +3,7 @@ function moveTodos {
 }
 
 export TODAY=$(date '+%Y%m%d')
-export YESTERDAY=$(date -v-1d '+%d%m%Y')
+export YESTERDAY=$(date -v-1d '+%Y%m%d')
 
 export TODO_DIR="$HOME/repos/notes/todos"
 if ! test -d $TODO_DIR/$TODAY; then 
