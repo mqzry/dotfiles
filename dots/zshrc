@@ -86,4 +86,5 @@ source $ZSH/oh-my-zsh.sh
 
 source <(kubectl completion zsh)
 export GOPATH=$HOME/code/go
-export PATH="$GOPATH/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PYPATH=$HOME/Library/Python/3.6/bin
+export PATH="$HOME/bin:$HOME/.cargo/bin:$PYPATH:$GOPATH/bin:/usr/local/bin:/usr/local/sbin:$PATH"
