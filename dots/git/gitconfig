@@ -1,19 +1,21 @@
 [user]
 	name = Mohamed Hashi
-	email = maxamedhashi@gmail.com
+	email = mhas@hashi.nu
 [pager]
 	branch = false
 	tag = false
 [core]
-	excludesfile = /Users/mhas/.gitignore_global
+	excludesfile = ~/.git/gitignore_global
 	autocrlf = input
 	editor = sublime -n -w
 [merge]
 	ff = yes
-	commit = no
+	commit = yes
 	tool = sublime
 [pull]
 	rebase = true
+[commit]
+	template = ~/.git/commit_template.txt
 [mergetool "sublime"]
 	cmd = subl -w $MERGED
 	trustExitCode = false
