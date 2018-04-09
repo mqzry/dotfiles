@@ -68,7 +68,9 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export EDITOR='nvim'
 fi
+
 bindkey -v
+
 export KEYTIMEOUT=1
 # Updates editor information when the keymap changes.
 
@@ -84,6 +86,9 @@ function zle-line-init zle-keymap-select () {
 
 zle -N zle-line-init
 zle -N zle-keymap-select
+bindkey -M viins '^r' history-incremental-search-backward
+bindkey -M vicmd '^r' history-incremental-search-backwardselect
+
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
@@ -98,8 +103,9 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 source <(kubectl completion zsh)
 # Setting path to include common bin locations
-export GOPATH=$HOME/code/go
+export GOPATH="$HOME/code/go"
 export PYPATH=$HOME/Library/Python/3.6
-export CARGOPATH=$HOME/.cargo
-export LOCALPATH=$HOME/bin
-export PATH="$LOCALHOME:$CARGOHOME/bin:$PYPATH/bin:$GOPATH/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export LOCALPATH="$HOME/bin"
+export PATH="$LOCALPATH:$PYPATH/bin:$GOPATH/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
