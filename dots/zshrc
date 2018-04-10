@@ -106,6 +106,9 @@ source <(kubectl completion zsh)
 export GOPATH="$HOME/code/go"
 export PYPATH=$HOME/Library/Python/3.6
 export LOCALPATH="$HOME/bin"
+export JAVA_HOME=`/usr/libexec/java_home -v`
+
 export PATH="$LOCALPATH:$PYPATH/bin:$GOPATH/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND="find . -type f"

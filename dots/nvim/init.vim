@@ -29,13 +29,6 @@ nnoremap <C-v> "*p
 "Abbreviations
 cabbrev help tab help
 
-"Vi-plug init
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
 "Declaring plugins
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'vim-airline/vim-airline'
