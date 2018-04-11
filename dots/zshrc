@@ -106,7 +106,7 @@ source <(kubectl completion zsh)
 export GOPATH="$HOME/code/go"
 export PYPATH=$HOME/Library/Python/3.6
 export LOCALPATH="$HOME/bin"
-export JAVA_HOME=`/usr/libexec/java_home -v`
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 export PATH="$LOCALPATH:$PYPATH/bin:$GOPATH/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
