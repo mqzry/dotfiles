@@ -2,6 +2,7 @@
 let mapleader=" "
 set tabstop=4
 set expandtab
+set shiftwidth=4
 set foldenable
 set autoindent
 set list
